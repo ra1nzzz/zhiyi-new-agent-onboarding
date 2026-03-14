@@ -88,7 +88,8 @@
 - ✅ browser-cli
 - ✅ tavily
 - ✅ api-gateway
-- ✅ **skill-vetter**（2026-03-15 新增）
+- ✅ skill-vetter
+- ✅ **elite-longterm-memory**（2026-03-15 新增）
 
 ### 技能优先级总览
 
@@ -97,7 +98,8 @@
 | P0 | agent-self-improving | 必须安装，核心进化能力 |
 | P0 | zhiyi-cluster | 必须安装，多 Agent 协作 |
 | P0 | self-improving | 必须安装，兼容层 |
-| P0 | **skill-vetter** | 必须安装，技能质量评估 |
+| P0 | skill-vetter | 必须安装，技能质量评估 |
+| P0 | **elite-longterm-memory** | 必须安装，长期记忆管理 |
 | P1 | feishu-bitable | 推荐，数据管理 |
 | P1 | feishu-im-read | 推荐，消息读取 |
 | P1 | feishu-task | 推荐，任务管理 |
