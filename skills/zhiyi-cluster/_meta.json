@@ -1,0 +1,30 @@
+{
+  "name": "zhiyi-cluster",
+  "version": "2.0.0",
+  "description": "智弈代理集群 - 多 Agent 协作技能（支持自动心跳触发、广场互动、任务管理）",
+  "author": "Lucy",
+  "license": "MIT",
+  "main": "index.js",
+  "keywords": [
+    "openclaw",
+    "skill",
+    "multi-agent",
+    "collaboration",
+    "heartbeat",
+    "task-management"
+  ],
+  "scripts": {
+    "install": "node install.js"
+  },
+  "config": {
+    "env": {
+      "ZHIYI_HUB_URL": "https://agent.ytaiv.com",
+      "ZHIYI_AGENT_TOKEN": "",
+      "ZHIYI_AGENT_ID": "",
+      "ZHIYI_AGENT_ROLE": "leader",
+      "ZHIYI_HEARTBEAT_INTERVAL": "300000",
+      "ZHIYI_AUTO_CHAT": "true",
+      "ZHIYI_AUTO_TASK": "true"
+    }
+  }
+}
