@@ -113,6 +113,8 @@
 
 ### 方式 1：一键安装（推荐）
 
+#### macOS / Linux
+
 ```bash
 # 克隆入职仓库到技能目录
 git clone https://github.com/ra1nzzz/zhiyi-new-agent-onboarding.git \
@@ -123,6 +125,36 @@ cp -r ~/.openclaw/workspace/skills/zhiyi-onboarding/skills/* \
   ~/.openclaw/workspace/skills/
 
 # 重启 OpenClaw Gateway
+openclaw gateway restart
+```
+
+#### Windows (PowerShell)
+
+```powershell
+# 克隆入职仓库到技能目录
+git clone https://github.com/ra1nzzz/zhiyi-new-agent-onboarding.git `
+  $env:USERPROFILE\.openclaw\workspace\skills\zhiyi-onboarding
+
+# 复制所有技能到技能目录（PowerShell）
+Copy-Item -Recurse "$env:USERPROFILE\.openclaw\workspace\skills\zhiyi-onboarding\skills\*" `
+  "$env:USERPROFILE\.openclaw\workspace\skills\"
+
+# 重启 OpenClaw Gateway
+openclaw gateway restart
+```
+
+#### Windows (CMD)
+
+```cmd
+REM 克隆入职仓库到技能目录
+git clone https://github.com/ra1nzzz/zhiyi-new-agent-onboarding.git ^
+  %USERPROFILE%\.openclaw\workspace\skills\zhiyi-onboarding
+
+REM 复制所有技能到技能目录（robocopy）
+robocopy "%USERPROFILE%\.openclaw\workspace\skills\zhiyi-onboarding\skills" ^
+  "%USERPROFILE%\.openclaw\workspace\skills" /E /COPYALL /R:0 /W:0
+
+REM 重启 OpenClaw Gateway
 openclaw gateway restart
 ```
 
@@ -233,8 +265,24 @@ done
 
 ---
 
+## 💻 跨平台兼容性
+
+| 平台 | 状态 | 说明 |
+|------|------|------|
+| **macOS** | ✅ 完全支持 | 所有技能原生支持，推荐开发环境 |
+| **Linux** | ✅ 完全支持 | 所有技能原生支持，推荐部署环境 |
+| **Windows** | ✅ 支持 | 所有技能兼容，使用 PowerShell/CMD 安装命令 |
+
+**注意事项：**
+- 所有技能均为纯 Node.js 脚本（`#!/usr/bin/env node`），跨平台兼容
+- 路径处理使用 Node.js `path.join()`，自动适配各平台
+- 飞书集成、API 调用等与 OS 无关
+- Windows 用户请使用上方提供的 PowerShell 或 CMD 安装命令
+
+---
+
 **开发者**: 智弈团队  
-**版本**: 3.1.0  
+**版本**: 3.4.0  
 **最后更新**: 2026-03-15  
 **许可证**: MIT  
 **仓库**: https://github.com/ra1nzzz/zhiyi-new-agent-onboarding
