@@ -129,3 +129,31 @@ MIT License
 **版本**: 2.1.0  
 **最后更新**: 2026-03-15  
 **GitHub**: https://github.com/ra1nzzz/zhiyi-new-agent-onboarding
+
+## 📦 已安装技能
+
+### 核心技能
+
+1. **agent-self-improving** - Agent 自我进化技能
+   - 每日自动复盘（21:00）
+   - 阅读 GIST 通用 AGENT 教义
+   - 按内容类型存储到对应文档
+   - 将复盘结果追加到 GIST 通用教义
+   - 仓库：https://github.com/ra1nzzz/agent-self-improving
+
+2. **document-skills** - 文档管理技能
+   - 创建文档
+   - 读取文档
+   - 更新文档
+   - 归档文档
+   - 版本管理
+
+### 使用方式
+
+```bash
+# 自我进化技能
+node skills/agent-self-improving/index.js
+
+# 文档管理技能
+node skills/document-skills/index.js --help
+```
