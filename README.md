@@ -73,13 +73,18 @@
     - 统一认证管理
     - 简化 API 调用
 
-### 待添加
+### 从 SkillHub 安装（可选）
 
-- **skill-vetter** - 技能质量评估 ⭐⭐⭐（开发中）
-  - 代码质量检查
-  - 安全性评估
-  - 兼容性测试
-  - 文档完整性检查
+以下技能未包含在仓库中，可通过 ClawHub 安装：
+
+```bash
+# skill-vetter - 技能质量评估（待发布）
+clawhub install skill-vetter
+
+# 或其他技能
+clawhub search <关键词>
+clawhub install <技能名>
+```
 
 ### 技能优先级总览
 
@@ -136,6 +141,19 @@ cp -r ~/.openclaw/workspace/skills/zhiyi-onboarding/skills/feishu-task \
 # 安装后使用 find-skill 搜索和安装其他技能
 node ~/.openclaw/workspace/skills/find-skill/index.js search "browser automation"
 node ~/.openclaw/workspace/skills/find-skill/index.js install <skill-name>
+```
+
+### 方式 4：从 ClawHub 安装
+
+```bash
+# 搜索技能
+clawhub search <关键词>
+
+# 安装技能
+clawhub install <技能名>
+
+# 例如安装 skill-vetter（待发布）
+clawhub install skill-vetter
 ```
 
 ## 📚 使用技能
