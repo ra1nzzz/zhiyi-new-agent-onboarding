@@ -1,0 +1,23 @@
+{
+  "name": "zhiyi-new-agent-onboarding",
+  "version": "2.1.0",
+  "description": "智弈团队 New Agent 一键入职技能",
+  "main": "index.js",
+  "bin": {
+    "zhiyi-onboarding": "./index.js"
+  },
+  "scripts": {
+    "start": "node index.js",
+    "test": "node test.js"
+  },
+  "keywords": ["智弈团队", "入职", "自动化", "openclaw"],
+  "author": "Lucy (星露) for 智弈团队",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/ra1nzzz/zhiyi-new-agent-onboarding.git"
+  },
+  "engines": {
+    "node": ">=14.0.0"
+  }
+}
