@@ -73,18 +73,22 @@
     - 统一认证管理
     - 简化 API 调用
 
-### 从 SkillHub 安装（可选）
+### 核心技能列表（完整版）
 
-以下技能未包含在仓库中，可通过 ClawHub 安装：
+所有核心技能已包含在 `skills/` 目录中，包括：
 
-```bash
-# skill-vetter - 技能质量评估（待发布）
-clawhub install skill-vetter
-
-# 或其他技能
-clawhub search <关键词>
-clawhub install <技能名>
-```
+- ✅ agent-self-improving
+- ✅ zhiyi-cluster
+- ✅ self-improving
+- ✅ feishu-bitable
+- ✅ feishu-im-read
+- ✅ feishu-task
+- ✅ document-skills
+- ✅ find-skill
+- ✅ browser-cli
+- ✅ tavily
+- ✅ api-gateway
+- ✅ **skill-vetter**（2026-03-15 新增）
 
 ### 技能优先级总览
 
@@ -93,6 +97,7 @@ clawhub install <技能名>
 | P0 | agent-self-improving | 必须安装，核心进化能力 |
 | P0 | zhiyi-cluster | 必须安装，多 Agent 协作 |
 | P0 | self-improving | 必须安装，兼容层 |
+| P0 | **skill-vetter** | 必须安装，技能质量评估 |
 | P1 | feishu-bitable | 推荐，数据管理 |
 | P1 | feishu-im-read | 推荐，消息读取 |
 | P1 | feishu-task | 推荐，任务管理 |
